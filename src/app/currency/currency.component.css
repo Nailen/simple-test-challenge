@@ -1,0 +1,11 @@
+.input {
+   text-align: center;
+}
+
+.like-an-input {
+  border: 1px solid black;
+  display: inline-block;
+  min-width: 180px !important;
+  height: 20px;
+  padding: 2px;
+}

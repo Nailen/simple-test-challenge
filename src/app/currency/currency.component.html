@@ -1,0 +1,17 @@
+<div class="row">
+  <input class="input" placeholder="Source currency" name="src-currency-value" [(ngModel)]="srcValue"
+         (keyup)="update()"/>
+  <select name="src-currency" [(ngModel)]="srcCurrency" (change)="update()">
+    <option *ngFor="let option of currencies" [value]="option.id">
+      {{option.id}}
+    </option>
+  </select>
+</div>
+<div>
+  <div class="like-an-input" id="target-currency-value">{{targetValue || 'Provide a number'}}</div>
+  <select name="target-currency" [(ngModel)]="targetCurrency" (change)="update()">
+    <option *ngFor="let option of currencies" [value]="option.id">
+      {{option.id}}
+    </option>
+  </select>
+</div>
